@@ -1,4 +1,4 @@
-package main
+badpackage main
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	if len(response) == 0 {
-		response = " Testing demo from GIT Synchronized.. Surya Says Hello OpenShift for Developers once again!"
+		response = " Testing demo from GIT Synchronized.. Surya Says Hello OpenShift in Hyderabad!"
 	}
 
 	fmt.Fprintln(w, response)
